@@ -17,9 +17,9 @@ number_students = 20
 string_teachers = "4"
 numberDogs = 0
 
-# EXAMPLE: print the result of the comparison: is number_seachers greater than number_students?
+# EXAMPLE: print the result of the comparison: is number_teachers greater than number_students?
 puts "Is number_teachers greater than number_students?", number_teachers > number_students
-# this should print: "Is numberTeachers greater than numberStudents?" false
+# this should print: "Is number_teachers greater than number_students?" false
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
 # this should print: true
@@ -55,19 +55,28 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 puts 4 < 9
 #YOU DO: Explain.
 
+# the code is asking if 4 is less than nine. The boolean will return true
+
 books = 3
 puts 4 < books
 # YOU DO: Explain.
+
+# the code is stating that there are 3 books and asking if 4 is less than the number of books. The boolean will return false
 
 friends = 6
 siblings = 2
 puts friends > siblings
 # YOU DO: Explain.
 
+# The code is establishing the two variables and their values, 6 friends and 2 siblings. Then it is asking if there are more friends then siblings. The boolean will return "true"
+
+
 attendees = 9
 meals = 8
 puts attendees != meals
 # YOU DO: Explain.
+
+# The code is establishing that there are 9 attendees and 8 meals. Then it is asking if there are different numbers of attendees and meals. The boolean will return true.
 
 
 #-------------------
@@ -90,16 +99,18 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
-
+puts loves_to_play && loves_treats
+true
 # Determine if the dog loves to play and loves the dog park
-
-
+puts loves_to_play && loves_dog_park
+false
 # Determine if the dog loves to play or loves the dog park
-
-
+puts loves_to_play || loves_dog_park
+true
 # Determine if the dog loves to play and is a puppy
 # Assume that a dog is a puppy if it is less than 2 years old.
-
+puts loves_to_play && age <=1
+true
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: True. Because both conditions were true. The dog is 1, which is less than 2, and it loves to play.
+
